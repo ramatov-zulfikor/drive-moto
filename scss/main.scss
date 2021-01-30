@@ -1,0 +1,12 @@
+@import './reset';
+@import './fonts';
+@import './variables';
+@import './mixins';
+@import './global'; // global settings: font-family, font-size, background-color, color etc.
+@import './overall'; // global classes: .wrapper, .container etc.
+
+// components imports
+
+@import './components/header';
+
+@import './components/footer';
