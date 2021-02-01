@@ -402,11 +402,13 @@ img {
 .slider__btn {
   position: absolute;
   top: 50%;
-  left: 20px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 9;
   outline: none;
+}
+.slider__prev {
+  left: 20px;
 }
 .slider__next {
   left: auto;
@@ -705,4 +707,182 @@ img {
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   text-align: center;
+}
+
+.products__inner {
+  margin-bottom: 80px;
+}
+.products__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+.products__slider__prev {
+  left: -35px;
+}
+.products__slider__next {
+  right: -35px;
+}
+.products__item {
+  display: inline-block;
+  margin: 15px;
+}
+.products__more-btn {
+  margin-top: 35px;
+  text-align: center;
+}
+.products__more-link {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  background-color: var(--base-color);
+}
+
+.tabs-triggers__item {
+  font-size: 15px;
+  line-height: 18px;
+  padding-bottom: 10px;
+}
+.tabs-triggers__item:not(:last-child) {
+  margin-right: 50px;
+}
+.tabs-triggers__item--active {
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.products-content {
+  margin-top: 25px;
+}
+.products-content__item {
+  display: none;
+}
+.products-content__item--active {
+  display: block;
+}
+
+.product {
+  position: relative;
+  max-width: 270px;
+}
+.product.product--sale .product__label {
+  display: block;
+}
+.product.product--not-available .product__price {
+  display: none;
+}
+.product.product--not-available .product__buy-btn {
+  display: none;
+}
+.product.product--not-available .product--not-available__text, .product.product--not-available .product--not-available__link {
+  display: block;
+}
+.product__wishlist-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 24px;
+  height: 22px;
+  background-image: url("../images/icons/fav-icon.svg");
+}
+.product__wishlist-btn.wishlist-btn--active {
+  background-image: url("../images/icons/fav-icon--active.svg");
+}
+.product__buy-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px 30px;
+  border-radius: 10px 0px 0px 0px;
+  background-color: var(--accent-color);
+  background-image: url("../images/icons/cart-icon--white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.product__label {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+}
+.product__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding: 50px 20px 30px 20px;
+  border-radius: 3px;
+  border: 1px solid var(--silver-color);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  min-height: 420px;
+}
+.product__item:hover {
+  color: var(--accent-color);
+  -webkit-box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+          box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  border: 1px solid var(--white-color);
+}
+.product__item:hover .product__hover-text {
+  opacity: 1;
+}
+.product__title {
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+.product__price {
+  font-family: "Barlow";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+.product__hover-text {
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  right: 20px;
+  padding: 15px 20px;
+  color: var(--main-color);
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.product--not-available__text {
+  display: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 15px;
+  color: var(--main-color);
+}
+.product--not-available__link {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  left: 41px;
+  right: 41px;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.banner {
+  margin-bottom: 80px;
 }
