@@ -166,6 +166,7 @@ table {
   --light-gray: #c4c4c4;
   --alto-color: #e0e0e0;
   --silver-color: #cdcdcd;
+  --abbey-color: #48494d;
 }
 
 html {
@@ -885,4 +886,107 @@ img {
 
 .banner {
   margin-bottom: 80px;
+}
+
+.footer {
+  padding: 45px 0 25px 0;
+  background-color: var(--base-color);
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-top__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  max-width: 222px;
+}
+.footer-top__form {
+  margin-top: 35px;
+  margin-right: 110px;
+  max-width: 300px;
+}
+.footer-top__social {
+  margin-left: auto;
+  margin-right: 75px;
+}
+
+.subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.subscribe-form__input {
+  font-size: 14px;
+  line-height: 17px;
+  padding: 8px 15px;
+  border: none;
+}
+w .subscribe-form__input::-webkit-input-placeholder {
+  color: var(--light-gray);
+}
+w .subscribe-form__input::-moz-placeholder {
+  color: var(--light-gray);
+}
+w .subscribe-form__input:-ms-input-placeholder {
+  color: var(--light-gray);
+}
+w .subscribe-form__input::-ms-input-placeholder {
+  color: var(--light-gray);
+}
+w .subscribe-form__input::placeholder {
+  color: var(--light-gray);
+}
+.subscribe-form__btn {
+  font-weight: 600;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.12em;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.footer-list {
+  margin-right: 100px;
+}
+.footer-list__link {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer-social {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.footer-social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-social__item:not(:last-child) {
+  margin-right: 30px;
+}
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px;
+}
+.footer-bottom__link {
+  font-size: 10px;
+  line-height: 12px;
+  margin: 0 40px;
+  color: var(--abbey-color);
 }
