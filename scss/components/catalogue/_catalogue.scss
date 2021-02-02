@@ -28,6 +28,7 @@
 
    &__aside {
       min-width: 290px;
+      margin-right: 10px;
    }
 
    // .catalogue__products
@@ -48,8 +49,6 @@
 
    &__pagination {}
 }
-
-.container {}
 
 .tags {
 
@@ -90,9 +89,128 @@
    }
 }
 
-.btn-reset {}
 
-.aside {}
+.aside {
+
+   // .aside__tabs
+
+   &__tabs {
+      display: flex;
+      margin-bottom: 40px;
+   }
+
+   // .aside__tabs-item
+
+   &__tabs-item {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.09em;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+      color: var(--light-gray);
+
+      &:first-child {
+         margin-right: 40px;
+      }
+   }
+
+   // .aside__form
+
+   &__form {}
+}
+
+.tabs {
+
+   // .tabs__item
+
+   &__item {
+
+      // .tabs__item--active
+   }
+
+   .aside__tabs-item.tabs__item--active {
+      font-weight: 700;
+      color: var(--main-color);
+      border-bottom: 2px solid var(--accent-color);
+   }
+}
+
+.filter-form {
+
+   // .filter-form__list
+
+   &__list {}
+
+   // .filter-form__item
+
+   &__item {
+
+      // .filter-form__item--drop
+
+      &--drop {
+         margin-bottom: 40px;
+      }
+   }
+}
+
+.filter-item {
+
+   // .filter-item__title
+
+   &__title {
+      position: relative;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+
+
+
+      // .filter-item__title--drop
+
+      &--drop {
+         padding-left: 20px;
+         margin-bottom: 20px;
+
+         &::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 12px;
+            height: 8px;
+            transform: rotate(0deg);
+            background-image: url('../images/icons/expand.svg');
+         }
+      }
+
+      // .filter-item__title--active
+
+      &--active {
+         &::before {
+            transform: rotate(180deg);
+         }
+      }
+   }
+
+   // .filter-item__content
+
+   &__content {
+      display: flex;
+   }
+
+   // .filter-item__label
+
+   &__label {
+      font-size: 14px;
+      line-height: 17px;
+      width: 50%;
+   }
+
+   // .filter-item__checkbox
+
+   &__checkbox {}
+}
+
 
 .pagination {
    max-width: 100%;

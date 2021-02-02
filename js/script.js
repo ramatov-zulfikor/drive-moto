@@ -50,4 +50,24 @@ $(document).ready(function () {
       $($(this).attr('href')).addClass('products-content__item--active')
    })
 
+   // ===
+
+   $('.pagination__item').click(function(e) {
+      e.preventDefault()
+
+      $($(this).siblings()).removeClass('pagination__item--active')
+      $(this).addClass('pagination__item--active')
+   })
+
+   // ===
+
+   $('.filter-styler').styler();
+
+   // ===
+
+   $('.filter-item__title--drop').click(function() {
+      $(this).toggleClass('filter-item__title--active')
+      $(this).next().slideToggle('200')
+   })
+
 });
