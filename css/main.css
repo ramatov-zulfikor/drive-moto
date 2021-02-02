@@ -183,6 +183,7 @@ html {
 
 body {
   font-family: "SF Pro Display", sans-serif;
+  min-height: 100vh;
   font-size: 20px;
   line-height: 24px;
   margin: 0;
@@ -222,6 +223,9 @@ img {
 }
 
 .wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 100%;
   overflow: hidden;
 }
@@ -886,6 +890,37 @@ img {
 
 .banner {
   margin-bottom: 80px;
+}
+
+.breadcrumbs {
+  margin: 45px 0;
+}
+.breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.breadcrumbs__item {
+  position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--light-gray);
+}
+.breadcrumbs__item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 15px;
+}
+.breadcrumbs__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 6px;
+  height: 10px;
+  background-image: url("../images/icons/more-icon.svg");
+  background-repeat: no-repeat;
 }
 
 .footer {
