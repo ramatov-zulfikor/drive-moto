@@ -186,8 +186,10 @@
                         <div class="tabs-content__item tabs-content__item--active" id="tab-1">
                            <form class="aside__form filter-form" action="#">
                               <ul class="filter-form__list">
+
                                  <li class="filter-form__item filter-form__item--drop filter-item">
-                                    <h2 class="filter-item__title filter-item__title--active filter-item__title--drop">Наличие</h2>
+                                    <h2 class="filter-item__title filter-item__title--active filter-item__title--drop">
+                                       Наличие</h2>
                                     <div class="filter-item__content">
                                        <label class="filter-item__label">
                                           <input type="checkbox" class="filter-styler filter-item__checkbox">
@@ -199,9 +201,74 @@
                                        </label>
                                     </div>
                                  </li>
+
+                                 <li class="filter-form__item filter-form__item--drop filter-item">
+                                    <h2 class="filter-item__title filter-item__title--active filter-item__title--drop">
+                                       Новинки</h2>
+                                    <div class="filter-item__content filter-item__content--no-wrap">
+                                       <label class="filter-item__label">
+                                          <input type="radio" name="radio" checked
+                                             class="filter-styler filter-item__checkbox">
+                                          Все
+                                       </label>
+                                       <label class="filter-item__label">
+                                          <input type="radio" name="radio" class="filter-styler filter-item__checkbox">
+                                          Новинки
+                                       </label>
+                                       <label class="filter-item__label">
+                                          <input type="radio" name="radio" class="filter-styler filter-item__checkbox">
+                                          Акции
+                                       </label>
+                                    </div>
+                                 </li>
+
+                                 <li class="filter-form__item filter-form__item--drop filter-item">
+                                    <h2 class="filter-item__title filter-item__title--active filter-item__title--drop">
+                                       Цена</h2>
+                                    <input type="text" class="js-range-slider" name="my_range" value=""
+                                       data-type="double" data-min="100000" data-max="500000" data-from="150000" data-to="275000"
+                                       data-grid="false" />
+                                 </li>
+
+                                 <li class="filter-form__item filter-form__item--list filter-item">
+                                    <h2 class="filter-item__title filter-item__title--list">Мощность, л.с.</h2>
+                                    <select class="filter-styler">
+                                       <option>90</option>
+                                       <option>130</option>
+                                       <option>154</option>
+                                       <option>230</option>
+                                       <option>300</option>
+                                    </select>
+                                 </li>
+
+                                 <li class="filter-form__item filter-form__item--list filter-item">
+                                    <h2 class="filter-item__title filter-item__title--list">Мощность двигателя, л.с.</h2>
+                                    <select class="filter-styler">
+                                       <option>90</option>
+                                       <option>130</option>
+                                       <option>154</option>
+                                       <option>230</option>
+                                       <option>300</option>
+                                    </select>
+                                 </li>
+
+                                 <li class="filter-form__item filter-form__item--list filter-item">
+                                    <h2 class="filter-item__title filter-item__title--list">Макс. скорость</h2>
+                                    <select class="filter-styler">
+                                       <option>90</option>
+                                       <option>130</option>
+                                       <option>154</option>
+                                       <option>230</option>
+                                       <option>300</option>
+                                    </select>
+                                 </li>
+
                               </ul>
+                              <!-- /.filter-form__list -->
                            </form>
+                           <!-- /.aside__form -->
                         </div>
+                        <!-- /.tabs-content__item -->
 
                         <div class="tabs-content__item" id="tab-2">Content 2</div>
 

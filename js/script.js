@@ -70,4 +70,8 @@ $(document).ready(function () {
       $(this).next().slideToggle('200')
    })
 
+   // ===
+
+   $('.js-range-slider').ionRangeSlider()
+
 });
