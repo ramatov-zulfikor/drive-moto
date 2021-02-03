@@ -43,6 +43,10 @@
 
 // === Range Slider ===
 
+.irs--flat {
+   margin-bottom: 60px;
+}
+
 .irs--flat .irs-min,
 .irs--flat .irs-max {
    font-family: 'Barlow', sans-serif;
@@ -174,4 +178,20 @@
    font-size: 14px;
    line-height: 17px;
    color: rgba(0, 0, 0, 0.6);
+}
+
+// === Select Filter ===
+
+.select-filter .jq-selectbox__select {
+   border: 1px solid #d7d9df;
+   margin-right: 35px;
+}
+
+.select-filter.jq-selectbox.focused .jq-selectbox__select {
+   border: 1px solid #d7d9df;
+}
+
+.select-filter .jq-selectbox__select-text {
+   margin-right: 15px;
+   margin-left: 15px;
 }

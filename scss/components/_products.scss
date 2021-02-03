@@ -97,6 +97,16 @@
    position: relative;
    max-width: 270px;
 
+   &.product--list {
+      max-width: 100%;
+      width: 100%;
+
+      & .product__image {
+         width: 270px;
+         margin: 0 auto;
+      }
+   }
+
    &.product--sale &__label { display: block; }
 
    &.product--not-available &__price { display: none; }
