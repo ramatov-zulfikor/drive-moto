@@ -139,16 +139,34 @@
 
    // .filter-form__list
 
-   &__list {}
+   &__list {
+
+      
+   }
 
    // .filter-form__item
 
    &__item {
 
+      &:nth-child(3) {
+         margin-bottom: 50px;
+      }
+
       // .filter-form__item--drop
 
       &--drop {
          margin-bottom: 40px;
+      }
+
+      // .filter-form__item--list
+
+      &--list {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         margin-top: 25px;
+         padding-bottom: 5px;
+         border-bottom: 2px solid var(--light-gray);
       }
    }
 }
@@ -162,14 +180,14 @@
       font-weight: 600;
       font-size: 16px;
       line-height: 19px;
+      padding-left: 20px;
 
 
 
       // .filter-item__title--drop
 
       &--drop {
-         padding-left: 20px;
-         margin-bottom: 20px;
+         
 
          &::before {
             content: '';
@@ -196,6 +214,12 @@
 
    &__content {
       display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+
+      &--no-wrap {
+         flex-wrap: nowrap;
+      }
    }
 
    // .filter-item__label
