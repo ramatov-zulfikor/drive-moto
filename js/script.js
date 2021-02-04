@@ -20,7 +20,7 @@ $(document).ready(function () {
 
    // ===
 
-   $('.tabs__item').click(function(e) {
+   $('.tabs__item').click(function (e) {
       e.preventDefault();
 
       $('.tabs__item').removeClass('tabs__item--active')
@@ -32,7 +32,7 @@ $(document).ready(function () {
 
    // ===
 
-   $('.product__wishlist-btn').click(function(e) {
+   $('.product__wishlist-btn').click(function (e) {
       e.preventDefault()
 
       $(this).toggleClass('wishlist-btn--active')
@@ -40,7 +40,7 @@ $(document).ready(function () {
 
    // ===
 
-   $('.tabs-triggers__item').click(function(e) {
+   $('.tabs-triggers__item').click(function (e) {
       e.preventDefault();
 
       $($(this).siblings()).removeClass('tabs-triggers__item--active')
@@ -52,7 +52,7 @@ $(document).ready(function () {
 
    // ===
 
-   $('.pagination__item').click(function(e) {
+   $('.pagination__item').click(function (e) {
       e.preventDefault()
 
       $($(this).siblings()).removeClass('pagination__item--active')
@@ -65,7 +65,7 @@ $(document).ready(function () {
 
    // ===
 
-   $('.filter-item__title--drop, .filter-item__settings-title').click(function() {
+   $('.filter-item__title--drop, .filter-item__settings-title').click(function () {
       $(this).toggleClass('filter-item__title--active')
       $(this).next().slideToggle('200')
    })
@@ -76,16 +76,25 @@ $(document).ready(function () {
 
    // ===
 
-   $('.tags__group-btn--grid').click(function() {
+   $('.tags__group-btn--grid').click(function () {
       $(this).addClass('tags__group-btn--selected')
       $('.tags__group-btn--list').removeClass('tags__group-btn--selected')
       $('.product').removeClass('product--list')
    })
 
-   $('.tags__group-btn--list').click(function() {
+   $('.tags__group-btn--list').click(function () {
       $(this).addClass('tags__group-btn--selected')
       $('.tags__group-btn--grid').removeClass('tags__group-btn--selected')
       $('.product').addClass('product--list')
+   })
+
+   // ===
+
+   $('.rate-yo').rateYo({
+      normalFill: '#c4c4c4',
+      ratedFill: "#1c62cd",
+      spacing: "5px",
+      readOnly: true
    })
 
 });
