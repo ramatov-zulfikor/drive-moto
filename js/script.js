@@ -23,8 +23,8 @@ $(document).ready(function () {
    $('.tabs__item').click(function (e) {
       e.preventDefault();
 
-      $('.tabs__item').removeClass('tabs__item--active')
-      $('.tabs-content__item').removeClass('tabs-content__item--active')
+      $($(this).siblings()).removeClass('tabs__item--active')
+      $($(this).parent().siblings().find('.tabs-content__item')).removeClass('tabs-content__item--active')
 
       $(this).addClass('tabs__item--active')
       $($(this).attr('href')).addClass('tabs-content__item--active')
