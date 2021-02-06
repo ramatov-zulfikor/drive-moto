@@ -84,3 +84,25 @@
       background-color: var(--accent-color);
    }
 }
+
+@media (max-width: 737px) {
+   .search__tabs {
+      overflow-x: auto;
+      min-width: 400px;
+      white-space: nowrap;
+   }
+}
+
+@media (max-width: 400px) {
+   .tabs-form__input {
+      max-width: 100%;
+      padding: 5px 0 5px 15px;
+   }
+
+   .tabs-form__btn {
+      font-size: 12px;
+      padding: 10px 20px;
+      letter-spacing: 0;
+      line-height: 14px;
+   }
+}
