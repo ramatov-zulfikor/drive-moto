@@ -211,3 +211,45 @@
       }
    }
 }
+
+@media (max-width: 1180px) {
+   .hero__slider {
+      max-width: 750px;
+   }
+}
+
+@media (max-width: 1050px) {
+   .hero__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .hero__slider {
+      max-width: 870px;
+      margin-bottom: 25px;
+   }
+}
+
+@media (max-width: 840px) {
+   .hero__slider {
+      max-width: 650px;
+   }
+
+   .slick-slide img {
+      max-height: 300px;
+   }
+}
+
+@media (max-width: 625px) {
+   .hero__slider {
+      max-width: 435px;
+   }
+
+   .slick-slide img {
+      max-height: 200px;
+   }
+   
+   .slider__btn {
+      display: none;
+   }
+}
