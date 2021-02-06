@@ -1114,6 +1114,28 @@ img {
   margin-bottom: 80px;
 }
 
+@media (max-width: 1250px) {
+  .slider__btn.products__slider__next,
+.slider__btn.products__slider__prev {
+    display: none;
+  }
+}
+@media (max-width: 717px) {
+  .products__triggers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+    min-width: 400px;
+    white-space: nowrap;
+  }
+
+  .tabs-triggers__item:not(:last-child) {
+    margin-right: 25px;
+  }
+}
 .breadcrumbs {
   margin: 45px 0;
 }
