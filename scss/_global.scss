@@ -16,6 +16,8 @@ body {
    margin: 0;
    color: var(--main-color);
    background-color: var(--white-color);
+   overflow-x: hidden;
+   min-width: 320px;
 }
 
 h1,

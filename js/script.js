@@ -97,4 +97,12 @@ $(document).ready(function () {
       readOnly: true
    })
 
+   // ===
+
+   $('.hamburger').click(function() {
+      $('.hamburger').toggleClass('is-active')
+      $('.mobile-menu').toggleClass('mobile-menu--active')
+      $('body, .mobile-categories__list').toggleClass('lock')
+   })
+
 });
