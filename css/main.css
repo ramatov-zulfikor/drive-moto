@@ -898,6 +898,36 @@ img {
   text-align: center;
 }
 
+@media (max-width: 930px) {
+  .group__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .group__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 49%;
+            flex: 0 1 49%;
+  }
+
+  .group__item:nth-child(4) {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 645px) {
+  .group__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 10px;
+  }
+
+  .group__item:nth-child(5) {
+    margin-bottom: 30px;
+  }
+}
 .products__inner {
   margin-bottom: 80px;
 }

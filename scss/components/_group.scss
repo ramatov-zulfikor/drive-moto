@@ -78,3 +78,29 @@
       text-align: center;
    }
 }
+
+@media (max-width: 930px) {
+   .group__inner {
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
+   .group__item {
+      flex: 0 1 49%;
+   }
+
+   .group__item:nth-child(4) {
+      margin-bottom: 30px;
+   }
+}
+
+@media (max-width: 645px) {
+   .group__item {
+      flex: 0 1 100%;
+      padding: 10px;
+   }
+
+   .group__item:nth-child(5) {
+      margin-bottom: 30px;
+   }
+}
