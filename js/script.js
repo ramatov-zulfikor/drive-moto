@@ -128,4 +128,11 @@ $(document).ready(function () {
       $('body, .mobile-categories__list').toggleClass('lock')
    })
 
+   // ===
+
+   $('.footer-top__title').click(function() {
+      $(this).next().slideToggle('200')
+      $(this).toggleClass('footer-top__title--active')
+   })
+
 });

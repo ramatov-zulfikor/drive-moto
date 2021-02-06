@@ -2029,3 +2029,65 @@ w .subscribe-form__input::placeholder {
   margin: 0 40px;
   color: var(--abbey-color);
 }
+
+@media (max-width: 1100px) {
+  .footer-top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .footer-top__social {
+    margin: 0;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  .footer-top__newsletter {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer-top__info {
+    margin-bottom: 25px;
+  }
+
+  .footer-top__social {
+    margin-top: 0;
+  }
+}
+@media (max-width: 467px) {
+  .footer-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .footer-bottom__link {
+    margin: 10px 0;
+  }
+
+  .footer-top__form {
+    margin-top: 20px;
+  }
+
+  .footer-top__list {
+    display: none;
+  }
+
+  .footer-top__info {
+    border-bottom: 2px solid #d1d1d1;
+    padding-bottom: 10px;
+  }
+}
