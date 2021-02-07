@@ -6,9 +6,6 @@
 .footer-top {
    display: flex;
 
-   // .footer-top__newsletter
-
-   &__newsletter {}
 
    // .footer-top__title
 
@@ -27,13 +24,6 @@
       max-width: 300px;
    }
 
-   // .footer-top__info
-
-   &__info {}
-
-   // .footer-top__list
-
-   &__list {}
 
    // .footer-top__social
 
@@ -76,14 +66,8 @@
    }
 }
 
-.btn-reset {}
-
 .footer-list {
    margin-right: 100px;
-
-   // .footer-list__item
-
-   &__item {}
 
    // .footer-list__link
 
@@ -110,10 +94,6 @@
          margin-right: 30px;
       }
    }
-
-   // .footer-social__link
-
-   &__link {}
 }
 
 .footer-bottom {

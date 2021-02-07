@@ -1,9 +1,5 @@
 .header {
 
-   // .header__top
-
-   &__top {}
-
    // .header__top-inner
 
    &__top-inner {
@@ -12,10 +8,6 @@
       justify-content: space-between;
       padding: 25px 0;
    }
-
-   // .header__menu
-
-   &__menu {}
 
    // .header__logo
 
@@ -29,18 +21,6 @@
          text-transform: uppercase;
       }
    }
-
-   // .header__box
-
-   &__box {}
-
-   // .header__bottom
-
-   &__bottom {}
-
-   // .header__categories
-
-   &__categories {}
 }
 
 
@@ -67,8 +47,6 @@
       font-weight: 700;
    }
 }
-
-.logo {}
 
 .box {
    display: flex;
@@ -110,10 +88,6 @@
    &__item {
       padding-right: 10px;
    }
-
-   // .panel__link
-
-   &__link {}
 }
 
 .cart {

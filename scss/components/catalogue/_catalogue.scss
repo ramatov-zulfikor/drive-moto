@@ -44,17 +44,9 @@
          margin-bottom: 30px;
       }
    }
-
-   // .catalogue__pagination
-
-   &__pagination {}
 }
 
 .tags {
-
-   // .tags__list
-
-   &__list {}
 
    // .tags__item
 
@@ -124,20 +116,9 @@
          margin-right: 40px;
       }
    }
-
-   // .aside__form
-
-   &__form {}
 }
 
 .tabs {
-
-   // .tabs__item
-
-   &__item {
-
-      // .tabs__item--active
-   }
 
    .aside__tabs-item.tabs__item--active {
       font-weight: 700;
@@ -147,10 +128,6 @@
 }
 
 .filter-form {
-
-   // .filter-form__list
-
-   &__list {}
 
    // .filter-form__item
 
@@ -253,10 +230,6 @@
       }
    }
 
-   // .filter-item__checkbox
-
-   &__checkbox {}
-
    // .filter-item__more
 
    &__more {
@@ -299,10 +272,6 @@
          border-bottom: 1px solid var(--light-gray);
       }
    }
-
-   // .filter-item__settings
-
-   &__settings {}
 
    &__settings-title {
       display: inline-block;
