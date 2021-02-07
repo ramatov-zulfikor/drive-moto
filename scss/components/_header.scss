@@ -256,7 +256,10 @@
 
 @media (max-width: 925px) {
 
-   body.lock, .mobile-categories__list.lock {
+   .mobile-categories__list.lock,
+   .tags__list.lock,
+   .breadcrumbs__list.lock,
+   .search__tabs.lock {
       overflow: hidden;
    }
 
@@ -277,7 +280,13 @@
    }
 
    .mobile-menu.mobile-menu--active {
+      overflow: auto;
       transform: translateX(0);
+   }
+
+   .mobile-menu__list {
+      overflow-y: auto;
+      min-height: 300px;
    }
 }
 

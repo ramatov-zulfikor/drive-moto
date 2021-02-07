@@ -15,7 +15,7 @@ $(document).ready(function () {
       slidesToScroll: 1,
       prevArrow: '<button type="button" class="slider__btn products__slider__prev btn-reset"><img src="images/icons/arrow-prev--black.svg" alt=""></button>',
       nextArrow: '<button type="button" class="slider__btn products__slider__next btn-reset"><img src="images/icons/arrow-next--black.svg" alt=""></button>',
-      arrows: false,
+      arrows: true,
       responsive: [
          {
             breakpoint: 1201,
@@ -71,6 +71,8 @@ $(document).ready(function () {
 
       $(this).addClass('tabs-triggers__item--active')
       $($(this).attr('href')).addClass('products-content__item--active')
+
+      $('.products__slider').slick('setPosition')
    })
 
    // ===
@@ -125,7 +127,7 @@ $(document).ready(function () {
    $('.hamburger').click(function () {
       $('.hamburger').toggleClass('is-active')
       $('.mobile-menu').toggleClass('mobile-menu--active')
-      $('body, .mobile-categories__list').toggleClass('lock')
+      $('body, .mobile-categories__list, .tags__list, .breadcrumbs__list, .search__tabs').toggleClass('lock')
    })
 
    // ===
