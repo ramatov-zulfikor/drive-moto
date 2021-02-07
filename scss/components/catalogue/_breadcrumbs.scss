@@ -3,7 +3,9 @@
 
    // .breadcrumbs__list
 
-   &__list { display: flex; }
+   &__list {
+      display: flex;
+   }
 
    // .breadcrumbs__item
 
@@ -29,5 +31,24 @@
             background-repeat: no-repeat;
          }
       }
+   }
+}
+
+@media (max-width: 1160px) {
+   .tags__group-btn {
+      display: none;
+   }
+}
+
+@media (max-width: 753px) {
+   .breadcrumbs__list {
+      overflow-x: auto;
+      min-width: 300px;
+      white-space: nowrap;
+   }
+
+   .breadcrumbs__item {
+      display: inline-block;
+      padding: 15px 15px 15px 0;
    }
 }

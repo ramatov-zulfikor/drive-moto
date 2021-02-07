@@ -135,4 +135,10 @@ $(document).ready(function () {
       $(this).toggleClass('footer-top__title--active')
    })
 
+   // ===
+
+   $('.aside__filter-btn').click(function() {
+      $(this).next().slideToggle('200')
+   })
+
 });

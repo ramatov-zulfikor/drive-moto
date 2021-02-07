@@ -365,3 +365,49 @@
       }
    }
 }
+
+.aside__filter-btn {
+   display: none;
+   font-size: 18px;
+   color: var(--white-color);
+   background-color: var(--accent-color);
+   padding: 15px 0;
+   width: 100%;
+   text-align: center;
+   margin-bottom: 25px;
+}
+
+@media (max-width: 1160px) {
+   .catalogue__products {
+      justify-content: space-evenly;
+   }
+
+   .tags__list {
+      overflow-x: auto;
+      min-width: 300px;
+      white-space: nowrap;
+   }
+
+   .tags__group {
+      margin-top: 30px;
+   }
+}
+
+@media (max-width: 767px) {
+   .catalogue__tags {
+      display: block;
+   }
+
+   .catalogue__inner {
+      flex-direction: column;
+   }
+
+   .aside__filter-btn {
+      display: block;
+   }
+
+   .aside__inner {
+      display: none;
+      margin-bottom: 25px;
+   }
+}
